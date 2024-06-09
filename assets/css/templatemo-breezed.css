@@ -1659,6 +1659,10 @@ portfolio
   color: #5fb759;
 }
 
+ img.logo {
+            margin-top: 2vh;
+            max-height: 5vh; /* Set maximum width for the logo */
+        }
 
 @media (max-width: 992px) {
   #projects .filters ul li {
@@ -1676,10 +1680,14 @@ portfolio
 
   }
 
+
   .img-fill img {
     object-fit: cover; /* Adjust if needed */
     width: 100vw;
   }
 
-  
+   img.logo {
+            margin-top: 1vh;
+            max-height: 8vh; /* Set maximum width for the logo */
+        }
 }
