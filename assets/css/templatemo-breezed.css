@@ -1670,3 +1670,16 @@ portfolio
     margin-bottom: 0px;
   }
 }
+@media (max-width: 768px) {
+  .img-fill {
+    height: 95vh; /* Adjust height for mobile view */
+
+  }
+
+  .img-fill img {
+    object-fit: cover; /* Adjust if needed */
+    width: 100vw;
+  }
+
+  
+}
