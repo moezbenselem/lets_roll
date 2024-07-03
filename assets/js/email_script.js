@@ -5,7 +5,7 @@ function sendMail() {
     let params = {
         name: document.getElementById("name").value,
         email: emailField.split("@")[0],
-        emailProvider: emailField.split("@")[1],
+        //emailProvider: emailField.split("@")[1],
         subject: document.getElementById("subject").value,
         message: document.getElementById("message").value,
         phone: document.getElementById("phone").value,
