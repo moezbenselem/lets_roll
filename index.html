@@ -45,6 +45,18 @@ https://templatemo.com/tm-543-breezed
     <link rel="stylesheet" href="assets/css/owl-carousel.css" />
 
     <link rel="stylesheet" href="assets/css/lightbox.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "4scXuz7dUEqlqXV-w",
+        });
+      })();
+    </script>
   </head>
 
   <body>
@@ -679,7 +691,7 @@ https://templatemo.com/tm-543-breezed
                   <img
                     src="assets/images/contact-info-02.png"
                     alt=""
-                  />info@company.com
+                  />contact.letsroll.fun@gmail.com
                 </li>
                 <li>
                   <img
@@ -692,7 +704,7 @@ https://templatemo.com/tm-543-breezed
           </div>
           <div class="col-lg-8 col-md-8 col-xs-12">
             <div class="contact-form">
-              <form id="contact" action="" method="get">
+              <form id="contact">
                 <div class="row">
                   <div class="col-md-6 col-sm-12">
                     <fieldset>
@@ -701,7 +713,7 @@ https://templatemo.com/tm-543-breezed
                         type="text"
                         id="name"
                         placeholder="Your Name *"
-                        required=""
+                        required
                       />
                     </fieldset>
                   </div>
@@ -712,7 +724,7 @@ https://templatemo.com/tm-543-breezed
                         type="text"
                         id="phone"
                         placeholder="Your Phone"
-                        required=""
+                        required
                       />
                     </fieldset>
                   </div>
@@ -720,10 +732,10 @@ https://templatemo.com/tm-543-breezed
                     <fieldset>
                       <input
                         name="email"
-                        type="email"
-                        id="email"
+                        type="text"
+                        id="userEmail"
                         placeholder="Your Email *"
-                        required=""
+                        required
                       />
                     </fieldset>
                   </div>
@@ -744,7 +756,7 @@ https://templatemo.com/tm-543-breezed
                         rows="6"
                         id="message"
                         placeholder="Message"
-                        required=""
+                        required
                       ></textarea>
                     </fieldset>
                   </div>
@@ -839,5 +851,6 @@ https://templatemo.com/tm-543-breezed
         });
       });
     </script>
+    <script src="assets/js/email_script.js"></script>
   </body>
 </html>
