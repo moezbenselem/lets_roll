@@ -5,10 +5,12 @@ function sendMail() {
     let params = {
         name: document.getElementById("name").value,
         email: emailField.split("@")[0],
-        //emailProvider: emailField.split("@")[1],
+        email_provider: emailField.split("@")[1].split(".")[0],
+        email_extension: emailField.split('.').pop(),
         subject: document.getElementById("subject").value,
         message: document.getElementById("message").value,
         phone: document.getElementById("phone").value,
+
     }
 
     console.log(params);
@@ -17,5 +19,4 @@ function sendMail() {
     let tempID = "template_rc93dac"
 
     emailjs.send(serviceID, tempID, params).then(alert("Email Sent !"))
-
 }
