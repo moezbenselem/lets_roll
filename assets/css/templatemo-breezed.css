@@ -1579,6 +1579,7 @@ portfolio
 
 #projects .filters {
   margin-top: 50px;
+  
 }
 #projects .filters ul {
   padding: 0;
@@ -1629,6 +1630,7 @@ portfolio
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+
 }
 #projects .filters-content .item:hover {
   opacity: 0.75;
@@ -1645,6 +1647,11 @@ portfolio
 }
 #projects .filters-content .item img {
   width: 100%;
+}
+
+#projects .filters-content .item video {
+  width: 100%;
+  height: 512px;
 }
 
 #projects {
